@@ -56,15 +56,5 @@ Each run is saved under `outputs/<topic_slug>/`, including:
 - `part2_handoff.json` and `part2_handoff.csv`;
 - optional `pdf_acquisition_results.json` and `full_texts/`.
 
-## 5. Handoff to Part 2
 
-Share the complete output folder with the Part 2 teammate, especially `part2_handoff.json`, `human_review.xlsx`, `full_texts/` (if PDFs were acquired), `research_protocol.json`, and `prisma_statistics.json`.
-
-## 6. Methodological limitations
-
-- OpenAlex is the only scholarly metadata source connected in V5; results are not a comprehensive search of all scholarly databases.
-- The search strategy and protocol are automatically drafted and must be validated by the research team.
-- TF-IDF is lexical similarity, not deep semantic understanding. Synonyms and conceptual equivalence may be missed.
-- Automated screening is preliminary. Never report automated decisions as final PRISMA eligibility decisions.
-- PDFs are downloaded only from open-access URLs supplied by OpenAlex; paywalls and access controls are not bypassed.
 
