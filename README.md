@@ -1,4 +1,4 @@
-# Part 1 — Research & Literature Acquisition Pipeline (V5)
+# Part 1 — Research & Literature Acquisition Pipeline 
 
 A topic-agnostic pipeline orchestrated with LangGraph. It drafts a protocol and search strategy, retrieves scholarly metadata from OpenAlex, deduplicates records, checks metadata quality, calculates explainable local TF-IDF relevance scores, performs preliminary title/abstract and publication-type screening, optionally downloads open-access PDFs, and exports a handoff for Part 2.
 
@@ -68,5 +68,3 @@ Share the complete output folder with the Part 2 teammate, especially `part2_han
 - Automated screening is preliminary. Never report automated decisions as final PRISMA eligibility decisions.
 - PDFs are downloaded only from open-access URLs supplied by OpenAlex; paywalls and access controls are not bypassed.
 
-### V5.3 relevance ranking
-V5.3 uses a generic, local weighted lexical score (no LLM or API key). Topic terms receive higher weight than research-question terms; title matches receive more weight than abstract-only matches. Each record includes matched terms and a short explanation. Relevance bands are conservative: high (>=0.90), medium (>=0.70), low (<0.70). These bands only prioritise human review and must never be treated as final inclusion/exclusion decisions.
